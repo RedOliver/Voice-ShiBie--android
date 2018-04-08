@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    >
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:textSize="20sp"
+        android:text="我是测试字体"
+        android:textColor="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_show"
+        >
+
+        <Button
+            android:id="@+id/btn_getpassword"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_zhuce"
+            android:layout_toStartOf="@+id/btn_zhuce"
+            android:text="获取密码"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_zhuce"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="42dp"
+            android:text="注册"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_delectmod"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/btn_getpassword"
+            android:layout_alignStart="@+id/btn_getpassword"
+            android:layout_below="@+id/btn_getpassword"
+            android:text="删除模型"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_selectmod"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btn_getpassword"
+            android:layout_toRightOf="@id/btn_delectmod"
+            android:text="查询模型"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_stoprecord"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/btn_delectmod"
+            android:layout_alignStart="@+id/btn_delectmod"
+            android:layout_below="@+id/btn_delectmod"
+            android:text="停止录音"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_yanzheng"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/btn_selectmod"
+            android:layout_toEndOf="@+id/btn_stoprecord"
+            android:layout_toRightOf="@+id/btn_stoprecord"
+            android:text="验证"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_dezhuce"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/btn_stoprecord"
+            android:layout_alignStart="@+id/btn_stoprecord"
+            android:layout_below="@+id/btn_stoprecord"
+            android:text="取消注册"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/btn_yanzheng"
+            android:layout_toEndOf="@+id/btn_dezhuce"
+            android:layout_toRightOf="@+id/btn_dezhuce"
+            android:text="返回"
+            android:textSize="25sp"
+            android:textColor="@color/lightgray"
+            android:background="#5fc0c0c0"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
